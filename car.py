@@ -1,5 +1,5 @@
 class Car:
-    def __init__(self,license_num: int, manufacturer : str, model :str, year : int, color : str, price : int, size : str, status : bool, mile : int):
+    def __init__(self, license_num : int, manufacturer : str, model :str, year : int, color : str, price : int, size : str, status : bool, mile : int):
         self._license_num = license_num
         self._manufacturer = manufacturer
         self._model = model
@@ -12,7 +12,7 @@ class Car:
 
 
     def __str__(self):
-        return (f"""serial number: {self._license_num}
+        print(f"""serial number: {self._license_num}
 manufacturer: {self._manufacturer}
 model: {self._model}
 year: {self._year}""")
