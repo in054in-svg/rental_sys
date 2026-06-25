@@ -1,40 +1,40 @@
 class Car:
-    def __init__(self, id_ : int, manufacturer : str, model :str, year : int, color : str, price : int, size : tuple, status : bool, mile : int):
-        self.__serial_num = id_
-        self.__manufacturer = manufacturer
-        self.__model = model
-        self.__year = year
+    def __init__(self,license_num: int, manufacturer : str, model :str, year : int, color : str, price : int, size : str, status : bool, mile : int):
+        self._license_num = license_num
+        self._manufacturer = manufacturer
+        self._model = model
+        self._year = year
         self.color = color
         self.price = price
-        self.__size = size
+        self._size = size
         self.status = status
         self.mile = mile
 
 
     def __str__(self):
-        print(f"""serial number: {self.__serial_num}
-manufacturer: {self.__manufacturer}
-model: {self.__model}
-year: {self.__year}""")
+        return (f"""serial number: {self._license_num}
+manufacturer: {self._manufacturer}
+model: {self._model}
+year: {self._year}""")
 
 
 
     @property
     def id_(self):
-        return self.__serial_num
+        return self._license_num
 
 
     @property
     def manufacturer(self):
-        return self.__manufacturer
+        return self._manufacturer
 
     @property
     def model(self):
-        return self.__model
+        return self._model
 
     @property
     def year(self):
-        return self.__year
+        return self._year
 
     @property
     def color(self):
@@ -48,7 +48,7 @@ year: {self.__year}""")
 
     @property
     def size(self):
-        return self.__size
+        return self._size
 
     
     @property
